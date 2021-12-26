@@ -15,10 +15,12 @@ iOS의 CollectionView를 Vertical로 사용해 TableView처럼 사용할 수 있
 하지만 문법적인 차이가 있습니다. 예를 들어 Swift의 Optional Binding을 Kotlin에서 Elvis Operator를 활용하여 같은 방식으로 사용할 수 있습니다.
 
 ```swift
+// swift
 guard let view = view else { return }
 ```
 
 ```kotlin
+// kotlin
 val view = view ?: return
 ```
 
@@ -29,10 +31,12 @@ val view = view ?: return
 Swift에는 다른 언어가 가진 삼항 연산자가 있습니다. 하지만 Kotlin에는 삼항 연산자가 없습니다. 삼항 연산자가 없으면 불편할 것 같은데... 알고보니 삼항 연산자가 없다고 말하기 애매한 것 같더라구요...? Kotlin에서는 삼항 연산자와 같은 코드를 어떻게 구현하는지 스위프트와 비교해서 보여드리겠습니다.
 
 ```swift
+// swift
 let number: Int = isNumberOdd == true ? 1 : 0
 ```
 
 ```kotlin
+// kotlin
 val number: Int = if (isNumberOdd == true) 1 else 0
 ```
 
