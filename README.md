@@ -121,4 +121,7 @@ RecyclerView의 아이템을 터치할 때 Effect 보여주기, 화면과 화면
 
 ![Result Image](https://github.com/CodingJT/Pokatsuki/blob/main/README%20Image/result_android_ios.gif)
 
-화면 전환 시에는 Fragment가 아닌 Activity 전환 방식으로 구현했습니다. iOS로 치면 Navigation Push가 아닌 Modal Present 방식을 사용했다 말할 수 있겠습니다.
+- Android
+    화면 전환 시에는 Fragment가 아닌 Activity 전환 방식으로 구현했습니다. iOS로 치면 Navigation Push가 아닌 Modal Present 방식을 사용했다 말할 수 있겠습니다.
+- iOS
+    화면 전환 시에 Modal Present가 아닌 Navigation Push 방식을 사용했습니다. Android에 비유하면 Activity 전환 방식을 사용하지 않고 Fragment 전환 방식을 사용한 셈입니다. 더 정확히는 [Android Jetpack Navigation](https://developer.android.com/guide/navigation/navigation-getting-started?hl=ko) 을 사용한 것에 가까울 것 같습니다.
