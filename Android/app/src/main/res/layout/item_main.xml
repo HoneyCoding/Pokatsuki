@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    android:divider="@drawable/horizontal_spacing"
+    android:showDividers="middle"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/mainProfileImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/circular"
+        android:backgroundTint="#03A9F4"
+        android:contentDescription="@string/empty_profile_image"
+        android:cropToPadding="true"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/round_person_black_48"
+        app:tint="#66000000"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/vertical_spacing"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/mainNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:maxLines="1"
+            android:text="@string/placeholder_name"
+            android:textColor="@android:color/primary_text_light_nodisable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mainDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:maxLines="3"
+            android:minLines="1"
+            android:text="@string/placeholder_description"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/primary_text_light_nodisable"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

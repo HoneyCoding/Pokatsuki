@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "profile_image_wonsang.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

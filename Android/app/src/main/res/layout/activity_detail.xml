@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:divider="@drawable/vertical_spacing"
+    android:showDividers="middle">
+
+    <ImageView
+        android:id="@+id/detailProfileImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/circular"
+        android:backgroundTint="#03A9F4"
+        android:contentDescription="@string/empty_profile_image"
+        android:cropToPadding="true"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/round_person_black_48"
+        app:tint="#66000000"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/detailNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/no_information"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detailDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/no_information"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:textSize="18sp" />
+
+</LinearLayout>
