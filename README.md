@@ -112,6 +112,6 @@ RecyclerView의 아이템을 터치할 때 Effect 보여주기, 화면과 화면
 
 
 
-![Result Image](./README Image/result_image.gif)
+![Result Image](https://github.com/CodingJT/Pokatsuki/blob/main/README%20Image/result_image.gif)
 
 화면 전환 시에는 Fragment가 아닌 Activity 전환 방식으로 구현했습니다. iOS로 치면 Navigation Push가 아닌 Modal Present 방식을 사용했다 말할 수 있겠습니다.
