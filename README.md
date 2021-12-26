@@ -1,3 +1,6 @@
+
+> 결과적으로 iOS 프로젝트도 네이티브로 개발하여 비교하게 되었습니다.
+
 # Android 첫 개발 프로젝트 - 포카츠키
 
 iOS 앱 개발 공부를 하며 얻은 지식을 Android에 활용해 볼 수 없을까 생각하며 진행한 프로젝트입니다. iOS의 CollectionView에 대응하는 RecyclerView를 활용했습니다. ListView, GridView도 있지만 Adapter 패턴이 강제되어 성능상의 이점이 있는 RecyclerView를 사용하고 싶었습니다.
@@ -116,6 +119,6 @@ RecyclerView의 아이템을 터치할 때 Effect 보여주기, 화면과 화면
 
 
 
-![Result Image](https://github.com/CodingJT/Pokatsuki/blob/main/README%20Image/result_image.gif)
+![Result Image](https://github.com/CodingJT/Pokatsuki/blob/main/README%20Image/result_android_ios.gif)
 
 화면 전환 시에는 Fragment가 아닌 Activity 전환 방식으로 구현했습니다. iOS로 치면 Navigation Push가 아닌 Modal Present 방식을 사용했다 말할 수 있겠습니다.
