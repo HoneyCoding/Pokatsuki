@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupContentView() {
         val contentView = binding.root
         setContentView(contentView)
+
     }
 
     private fun setupRecyclerView() {

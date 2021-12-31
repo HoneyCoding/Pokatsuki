@@ -80,6 +80,7 @@ extension MainViewController: UITableViewDataSource {
         let member = memberList[indexPath.row]
         cell.nameText = member.name
         cell.descriptionText = member.description
+        cell.isSelected = false
         if let imageAssetName = member.imageAssetName {
             cell.profileImage = UIImage(named: imageAssetName)
         } else {
