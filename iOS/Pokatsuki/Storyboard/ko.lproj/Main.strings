@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "전달받은 정보 없음"; ObjectID = "I5X-32-ND3"; */
+"I5X-32-ND3.text" = "전달받은 정보 없음";
+
+/* Class = "UILabel"; text = "내용"; ObjectID = "O5m-kT-hLA"; */
+"O5m-kT-hLA.text" = "내용";
+
+/* Class = "UILabel"; text = "이름"; ObjectID = "eB3-L1-Xpu"; */
+"eB3-L1-Xpu.text" = "이름";
+
+/* Class = "UINavigationItem"; title = "멤버 현황"; ObjectID = "mtL-5A-4E4"; */
+"mtL-5A-4E4.title" = "멤버 현황";
+
+/* Class = "UILabel"; text = "전달받은 정보 없음"; ObjectID = "pCp-Z7-CQb"; */
+"pCp-Z7-CQb.text" = "전달받은 정보 없음";

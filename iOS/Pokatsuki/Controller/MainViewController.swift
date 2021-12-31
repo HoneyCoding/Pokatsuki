@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
         let memberList = [
             Member(name: "윤원상",
                    description: "ㅈㅌ형 제발 구원좀 이러다다죽어~",
-                   imageAssetName: "profile_image_wonsang"),
+                   imageAssetName: AssetName.Image.wonsangProfile),
             Member(name: "김진태",
                    description: """
                                 ?????????????????????????????
@@ -41,12 +41,12 @@ class MainViewController: UIViewController {
                    description: "메이플해야됨ㅅㄱ"),
             Member(name: "박경호",
                    description: "@이후영 라프텔이라는 서비스 들어봤어?",
-                   imageAssetName: "profile_image_gyeongho"),
+                   imageAssetName: AssetName.Image.gyeonghoProfile),
             Member(name: "이후영",
                    description: "그걸 어디서 듣고 온 거야 ㄷ"),
             Member(name: "누리",
                    description: "ㅎㅇㅂㅂ",
-                   imageAssetName: "profile_image_nuri"),
+                   imageAssetName: AssetName.Image.nuriProfile),
         ]
         let repeatedMemberList = Array(repeating: memberList, count: 5).flatMap { $0 }
         self.memberList = repeatedMemberList
@@ -80,7 +80,9 @@ extension MainViewController: UITableViewDataSource {
         let member = memberList[indexPath.row]
         cell.nameText = member.name
         cell.descriptionText = member.description
-        cell.isSelected = false
+//        if cell.isSelected {
+//            tableView.deselectRow(at: indexPath, animated: false)
+//        }
         if let imageAssetName = member.imageAssetName {
             cell.profileImage = UIImage(named: imageAssetName)
         } else {
@@ -93,8 +95,7 @@ extension MainViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
-        cell.isSelected = false
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
 
@@ -105,7 +106,6 @@ extension MainViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let member = memberList[indexPath.row]
         destination.member = member
-        destination.title = member.name
     }
 }
 

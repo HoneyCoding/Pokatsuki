@@ -20,5 +20,6 @@ class DetailViewController: UIViewController {
         }
         nameLabel.text = member?.name
         descriptionLabel.text = member?.description
+        self.title = member?.name
     }
 }

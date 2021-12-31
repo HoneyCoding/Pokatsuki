@@ -11,6 +11,18 @@ import UIKit
 @IBDesignable
 class CircularImageView: UIImageView {
     
+    private let defaultPadding: UIEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         setupImageView()
@@ -27,6 +39,10 @@ class CircularImageView: UIImageView {
         self.layer.cornerRadius = self.frame.width / 2
         self.clipsToBounds = true
     }
+    
+    private func commonInit() {
+        clearImage()
+    }
 }
 
 // MARK: - Method
@@ -37,11 +53,25 @@ extension CircularImageView {
         self.contentMode = .scaleAspectFill
     }
     
-    func clearImage(with bundle: Bundle? = nil) {
-        self.image = UIImage(named: "round_person_black",
+    final func clearImage(with bundle: Bundle) {
+        self.clearImage(with: bundle, padding: nil)
+    }
+    
+    final func clearImage() {
+        self.clearImage(with: nil, padding: defaultPadding)
+    }
+    
+    private func clearImage(with bundle: Bundle?, padding insets: UIEdgeInsets?) {
+        var personIconImage = UIImage(named: AssetName.Image.personIcon,
                              in: bundle,
                              compatibleWith: self.traitCollection)?
-            .withTintColor(UIColor.parseColor(with: "#000000", alpha: 66 / 255))
+            .withTintColor(UIColor.parseColor(with: "#000000", alpha: 150 / 255))
+        
+        if let insets = insets {
+            personIconImage = personIconImage?.padding(insets)
+        }
+        
+        self.image = personIconImage
         self.backgroundColor = UIColor.parseColor(with: "#03A9F4")
         self.contentMode = .scaleAspectFit
     }
