@@ -4,7 +4,7 @@ import { View, Image, StyleSheet } from 'react-native';
 import Images from '~/src/assets/images';
 
 const ProfileImage = (props) => {
-    const { imageSource } = props;
+    const { imageSource = Images.personIcon } = props;
     const isDefaultImage = imageSource === Images.personIcon;
     return (
     <View
@@ -17,7 +17,8 @@ const ProfileImage = (props) => {
             styles.profileImage,
             isDefaultImage ? styles.defaultImage : null
         ]}
-        source={imageSource}/>
+        source={imageSource}
+        cache={''}/>
     </View>);
 };
 

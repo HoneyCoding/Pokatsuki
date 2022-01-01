@@ -6,7 +6,7 @@ import Images from '~/src/assets/images';
 import * as ScreenName from '~/src/constant/ScreenName';
 
 const MainListItem = ({item, navigation}) => {
-    const { name, description, imageSource = Images.personIcon } = item;
+    const { name, description, imageSource } = item;
     return (
     <TouchableOpacity onPress={() => navigation.navigate(ScreenName.detailScreenName, { item })}>
         <View style={styles.itemStyle}>

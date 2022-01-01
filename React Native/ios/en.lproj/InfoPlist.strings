@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Pokatsuki
+
+  Created by 김진태 on 2022/01/01.
+  
+*/
+
+CFBundleDisplayName = "Pokatsuki RN";
