@@ -17,13 +17,13 @@
   
   
 
-# Android/iOS/Flutter로 작성해보는 간단한 앱: 포카츠키
+# Android/iOS/Flutter/React Native로 작성해보는 간단한 앱: 포카츠키
 
 iOS 앱 개발 공부를 하며 얻은 지식을 Android에 활용해 볼 수 없을까 생각하며 진행한 프로젝트입니다. iOS의 CollectionView에 대응하는 RecyclerView를 활용했습니다. ListView, GridView도 있지만 Adapter 패턴이 강제되어 성능상의 이점이 있는 RecyclerView를 사용하고 싶었습니다.
 
 iOS의 CollectionView를 Vertical로 사용해 TableView처럼 사용할 수 있는 것과 마찬가지로 RecyclerView도 GridView가 아닌 ListView처럼 사용할 수 있습니다.
 
-> 나중에는 Android/iOS 네이티브가 아닌 Flutter와 같은 프레임워크를 활용하여 구현하는 방식도 진행해보았습니다.
+> 나중에는 Android/iOS 네이티브가 아닌 Flutter와 React Native 같은 프레임워크를 활용하여 구현하는 방식도 진행해보았습니다. 관련 내용은 나중에 추가해보겠습니다.
 
 ## Android와 iOS 네이티브 개발 방식 비교
 
