@@ -143,7 +143,7 @@ Permission, Network와 같은 기능 구현보다는 UI 구현에 집중해보�
 
 RecyclerView의 아이템을 터치할 때 Effect 보여주기, 화면과 화면 사이에 데이터 전달, 둥근 모양의 ImageView 구현 등을 해보았습니다. 해당 프로젝트 실행 시 모습은 아래와 같습니다.
 
-![ResultImage](https://github.com/CodingJT/Pokatsuki/blob/main/readme_image/result_android_ios.gif)
+![ResultImage](https://github.com/CodingJT/Pokatsuki/blob/main/README_Image/result_android_ios.gif)
 
 - Android
     화면 전환 시에는 Fragment가 아닌 Activity 전환 방식으로 구현했습니다. iOS로 치면 Navigation Push가 아닌 Modal Present 방식을 사용했다 말할 수 있겠습니다.
